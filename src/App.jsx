@@ -1,10 +1,9 @@
-import Counter from "./components/counter/Counter";
 import "./App.css";
-import ToDo from "./components/todo/ToDo";
+import Calculator from "./components/calculator/Claculator";
 function App() {
   return (
     <>
-      <ToDo />
+      <Calculator />
     </>
   );
 }

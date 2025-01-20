@@ -1,9 +1,9 @@
 import "./App.css";
-import Calculator from "./components/calculator/Claculator";
+import ReactFormHook from "./components/ReactFormHook";
 function App() {
   return (
     <>
-      <Calculator />
+      <ReactFormHook />
     </>
   );
 }

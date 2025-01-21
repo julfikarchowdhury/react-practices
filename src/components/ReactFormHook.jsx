@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { NavLink } from "react-router";
 
 const ReactFormHook = () => {
   const {
@@ -53,6 +54,7 @@ const ReactFormHook = () => {
         <br />
         <button type="submit">Submit</button>
       </form>
+      <NavLink to={'calculator'}>Calculator</NavLink>
     </div>
   );
 };

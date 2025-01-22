@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Calculator.css"; // CSS file for styling
+import { Context } from "../Context";
 
 const Calculator = () => {
   const [input, setInput] = useState("");
@@ -20,7 +21,7 @@ const Calculator = () => {
       setInput(error);
     }
   };
-
+  const userData = useContext(Context);
   return (
     <div className="main-body">
       <div className="calculator-container">
@@ -52,6 +53,7 @@ const Calculator = () => {
           </div>
         </div>
       </div>
+      <p>{userData.name}</p>
     </div>
   );
 };
